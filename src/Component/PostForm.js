@@ -20,7 +20,7 @@ export default class PostForm extends Component {
             title: this.state.title,
             body: this.state.body
         }
-
+//========================RIGHT HERE======================================
         fetch("https://jsonplaceholder.typicode.com/posts",{
             method: 'POST',
             header: {
@@ -30,7 +30,7 @@ export default class PostForm extends Component {
         })
             .then(res => res.json())
             .then(data => console.log(data))
-
+//=======================================================================
     }
 
     render() {
